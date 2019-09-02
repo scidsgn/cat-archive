@@ -1,0 +1,188 @@
+body {
+    background: #000;
+    color: #fff;
+
+    font-family: "Lexend Deca", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 48px;
+        width: auto;
+    }
+}
+
+section.pageInfo {
+    margin: 16px;
+
+    h1 {
+        font-size: 32pt;
+        font-weight: 400;
+        margin: 0;
+
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20pt;
+        font-weight: 400;
+        margin: 0;
+
+        text-align: center;
+    }
+}
+
+section.catList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    div.cat {
+        width: 128px;
+
+        padding: 8px;
+        margin: 8px;
+        border-radius: 8px;
+        
+        text-align: center;
+
+        img {
+            width: 96px;
+            height: 96px;
+        }
+
+        p.id {
+            font-size: 12pt;
+
+            margin: 4px 0px 0px 0px;
+
+            opacity: 0.6;
+        }
+
+        p.name {
+            font-size: 16pt;
+
+            margin: 0px 0px 8px 0px;
+
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    div.cat:hover {
+        background: #1e1e1e;
+    }
+
+    div.cat:active {
+        background: #fff;
+        color: #000;
+    }
+}
+
+span.season {
+    color: #fff;
+
+    padding: 4px 8px;
+    border-radius: 4px;
+    
+    text-transform: uppercase;
+}
+
+span.season.season1 {
+    background: linear-gradient(45deg, rgb(19, 52, 201), rgb(83, 0, 161));
+}
+
+span.season.season2 {
+    background: linear-gradient(45deg, rgb(255, 113, 19), rgb(216, 4, 145));
+}
+
+span.season.season3 {
+    background: linear-gradient(45deg, rgb(10, 189, 64), rgb(6, 167, 140));
+}
+
+span.season.season4 {
+    background: linear-gradient(45deg, rgb(255, 27, 27), rgb(59, 10, 175));
+}
+
+div.modal.hidden {
+    display: none;
+}
+
+div.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    background: #000000c0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    content {
+        max-width: 500px;
+        max-height: calc(100% - 64px);
+
+        background: #000;
+        
+        padding: 16px;
+        border-radius: 16px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        overflow: auto;
+
+        img {
+            width: 256px;
+            height: 256px;
+        }
+
+        p.id {
+            margin: 0;
+        }
+
+        h1, h2 {
+            font-weight: 400;
+
+            margin: 0;
+        }
+
+        span.season {
+            margin: 8px 0px 16px 0px;
+        }
+
+        label {
+            margin-top: 16px;
+        }
+    }
+
+    content.season1 {
+        box-shadow: -8px 8px 32px rgb(19, 52, 201),
+                    8px -8px 32px rgb(83, 0, 161);
+    }
+
+    content.season2 {
+        box-shadow: -8px 8px 32px rgb(255, 113, 19),
+                    8px -8px 32px rgb(216, 4, 145);
+    }
+
+    content.season3 {
+        box-shadow: -8px 8px 32px rgb(10, 189, 64),
+                    8px -8px 32px rgb(6, 167, 140);
+    }
+
+    content.season4 {
+        box-shadow: -8px 8px 32px rgb(255, 27, 27),
+                    8px -8px 32px rgb(59, 10, 175);
+    }
+}

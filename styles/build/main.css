@@ -1,0 +1,148 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header img {
+  height: 48px;
+  width: auto;
+}
+
+section.pageInfo {
+  margin: 16px;
+}
+section.pageInfo h1 {
+  font-size: 32pt;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+section.pageInfo h2 {
+  font-size: 20pt;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+section.catList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section.catList div.cat {
+  width: 128px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+  text-align: center;
+}
+section.catList div.cat img {
+  width: 96px;
+  height: 96px;
+}
+section.catList div.cat p.id {
+  font-size: 12pt;
+  margin: 4px 0px 0px 0px;
+  opacity: 0.6;
+}
+section.catList div.cat p.name {
+  font-size: 16pt;
+  margin: 0px 0px 8px 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+section.catList div.cat:hover {
+  background: #1e1e1e;
+}
+section.catList div.cat:active {
+  background: #fff;
+  color: #000;
+}
+
+span.season {
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+span.season.season1 {
+  background: linear-gradient(45deg, #1334c9, #5300a1);
+}
+
+span.season.season2 {
+  background: linear-gradient(45deg, #ff7113, #d80491);
+}
+
+span.season.season3 {
+  background: linear-gradient(45deg, #0abd40, #06a78c);
+}
+
+span.season.season4 {
+  background: linear-gradient(45deg, #ff1b1b, #3b0aaf);
+}
+
+div.modal.hidden {
+  display: none;
+}
+
+div.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: #000000c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.modal content {
+  max-width: 500px;
+  max-height: calc(100% - 64px);
+  background: #000;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+}
+div.modal content img {
+  width: 256px;
+  height: 256px;
+}
+div.modal content p.id {
+  margin: 0;
+}
+div.modal content h1, div.modal content h2 {
+  font-weight: 400;
+  margin: 0;
+}
+div.modal content span.season {
+  margin: 8px 0px 16px 0px;
+}
+div.modal content label {
+  margin-top: 16px;
+}
+div.modal content.season1 {
+  box-shadow: -8px 8px 32px #1334c9, 8px -8px 32px #5300a1;
+}
+div.modal content.season2 {
+  box-shadow: -8px 8px 32px #ff7113, 8px -8px 32px #d80491;
+}
+div.modal content.season3 {
+  box-shadow: -8px 8px 32px #0abd40, 8px -8px 32px #06a78c;
+}
+div.modal content.season4 {
+  box-shadow: -8px 8px 32px #ff1b1b, 8px -8px 32px #3b0aaf;
+}
+
+/*# sourceMappingURL=main.css.map */
