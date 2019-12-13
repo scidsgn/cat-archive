@@ -70,7 +70,8 @@ function getCats() {
                         getSeasonCats(1),
                         getSeasonCats(2),
                         getSeasonCats(3),
-                        getSeasonCats(4)
+                        getSeasonCats(4),
+                        getSeasonCats(5)
                     ];
                     return [4 /*yield*/, Promise.all(seasons)];
                 case 1:
@@ -142,7 +143,7 @@ function generatePage() {
                 case 1:
                     allCats = _a.sent();
                     filterType = "season";
-                    filterValue = "4";
+                    filterValue = "5";
                     queries = parseSearch();
                     if (queries.has("filter") && queries.has("value")) {
                         filterType = queries.get("filter");

@@ -21,7 +21,8 @@ async function getCats(): Promise<Cat[]> {
         getSeasonCats(1),
         getSeasonCats(2),
         getSeasonCats(3),
-        getSeasonCats(4)
+        getSeasonCats(4),
+        getSeasonCats(5)
     ]
     let all = await Promise.all(seasons)
     let out: Cat[] = []
@@ -106,7 +107,7 @@ async function generatePage() {
     let allCats = await getCats()
 
     let filterType: string = "season"
-    let filterValue: string = "4"
+    let filterValue: string = "5"
 
     let queries = parseSearch()
     if (queries.has("filter") && queries.has("value")) {
