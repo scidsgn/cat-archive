@@ -88,6 +88,10 @@ span.season.season4 {
   background: linear-gradient(45deg, #ff1b1b, #3b0aaf);
 }
 
+span.season.season5 {
+  background: linear-gradient(45deg, #1be4ff, #930aaf);
+}
+
 div.modal.hidden {
   display: none;
 }
@@ -143,6 +147,9 @@ div.modal content.season3 {
 }
 div.modal content.season4 {
   box-shadow: -8px 8px 32px #ff1b1b, 8px -8px 32px #3b0aaf;
+}
+div.modal content.season5 {
+  box-shadow: -8px 8px 32px #1be4ff, 8px -8px 32px #930aaf;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -108,6 +108,10 @@ span.season.season4 {
     background: linear-gradient(45deg, rgb(255, 27, 27), rgb(59, 10, 175));
 }
 
+span.season.season5 {
+    background: linear-gradient(45deg, rgb(27, 228, 255), rgb(147, 10, 175));
+}
+
 div.modal.hidden {
     display: none;
 }
@@ -184,5 +188,10 @@ div.modal {
     content.season4 {
         box-shadow: -8px 8px 32px rgb(255, 27, 27),
                     8px -8px 32px rgb(59, 10, 175);
+    }
+
+    content.season5 {
+        box-shadow: -8px 8px 32px rgb(27, 228, 255),
+                    8px -8px 32px rgb(147, 10, 175);
     }
 }
